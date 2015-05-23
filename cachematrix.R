@@ -1,5 +1,13 @@
+##
 ## Author : Julie Koesmarno (http://www.mssqlgirl.com)
-## Version: 1.0 - 23 May 2015
+## Version: 1.0 - 2015.05.23
+## Usage  :
+##  source("cachematrix.R")
+##  test <- matrix(c(5,2,3,4), nrow = 2, ncol = 2)
+##  m <- makeCacheMatrix(test)
+##  cacheSolve(m) ## This will calculate the inverse the first time
+##  cacheSolve(m) ## This will retrieve the cached inverse
+##
 
 ##
 ## makeCacheMatrix creates a special "matrix" object that allows
